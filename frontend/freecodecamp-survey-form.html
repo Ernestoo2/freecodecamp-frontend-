@@ -1,0 +1,197 @@
+<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        html{
+            height: auto;
+        }
+        body {
+            max-width: max-content;
+            margin: auto;
+            background-image: url("https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg");
+            
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #title{
+            text-align: center;
+            font-size: 45px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(129, 184, 194);
+        }
+        #description{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-family: Trebuchet MS;
+        }
+        #survey-form {
+            background-image: url("https://image.shutterstock.com/image-vector/web-development-coding-programming-responsive-600w-1449924503.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 700px;
+            padding: 50px;
+            margin: 20px;
+            
+        }
+        textarea, #submit, #name, #email, #number {
+            width: 100%;
+            color: rgb(29, 158, 102);
+            font-size: 25px;
+            cursor:horizontal-text;
+            font-family: tahoma;
+            padding: 12px 20px;
+            margin: 11px 0;
+            box-sizing: border-box;
+        }
+        #name-label, #email-label, #number-label, label{
+            font-family: tahoma;
+            cursor: pointer;
+            color: lavender ;
+            font-size: 29px;
+        }
+       
+        #dropdown{
+            font-size: 25px;
+            color: rgb(70, 77, 74);
+            width: 100%;
+            display:block;
+            position:sticky;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 100px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            
+        }
+          
+        #submit:hover{
+            animation-name: background-color;
+            animation-duration: 500ms;
+            cursor:progress;
+            animation-fill-mode: forwards;
+        }
+        @keyframes background-color {
+            100% {
+              background-color: #4791d0;
+            }
+        #Front-end-Projects, #Definitely {
+            cursor: pointer;
+            position:relative;
+            width: 20px;
+            height: 20px;
+            left: 4px;
+            top: 4px;
+        
+            -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+            -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+            box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,1);
+        
+            background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+            background: -moz-linear-gradient(top, #222 0%, #45484d 100%);
+            background: -o-linear-gradient(top, #222 0%, #45484d 100%);
+            background: -ms-linear-gradient(top, #222 0%, #45484d 100%);
+            background: linear-gradient(top, #222 0%, #45484d 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222', endColorstr='#45484d',GradientType=0 );
+        }
+        
+          
+          
+
+    </style>
+  
+</head>
+
+
+<body>
+    <br><br><h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i> </p>
+
+    <form id="survey-form">
+        <label id="name-label"> Name </label> <br>
+        <input id="name" type="text" placeholder="Enter Your Name" required><br><br>
+
+        <label id="email-label">Email</label><br>
+        <input id="email" type="email" placeholder="Enter Your Email" required><br><br>
+
+        <label id="number-label">Age(optional) </label><br>
+        <input id="number" type="number" name="age" placeholder="Age" min="18" max="60" optional><br><br>
+
+        <label>Which option best describes your current role?</label><br>
+        <select id="dropdown" name="dropdown">
+            <option value="Select Current role">Select Current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer Not to Say ">Prefer Not to Say</option>
+            <option value="Other">Other</option>
+        </select>
+        </label><br><br>
+
+        <label>Would you recommend freeCodeCamp to a friend?</label><br>
+        <label for="Definitely"><input id="Definitely" type="radio" name="Recommendations" value="Definitely" checked>
+            Definitely</label><br>
+        <label for="Maybe"><input id="Definitely" type="radio" name="Recommendations" value="Maybe"> Maybe</label><br>
+        <label for="Not sure"><input id="Definitely" type="radio" name="Recommendations" value="Not sure"> Not
+            sure</label><br><br>
+
+        <label>What is your favorite feature of freeCodeCamp?</label><br>
+        <select id="dropdown" name="dropdown">
+            <option value="Challenges">Select an Option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="community">community</option>
+            <option value="Open source  ">Open source</option>
+
+        </select>
+        </label><br><br>
+
+        <label>What would you like to see improved? <small>(Check all that apply)</small></label><br>
+        <label for="Front-end Projects"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Front-end Projects</label><br>
+        <label for="Back-end Projects"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Back-end Projects</label><br>
+        <label for="Data Visualization"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Data Visualizatione</label><br>
+        <label for="Challenges"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                 value="Check all that apply"> Challenges</label><br>
+        <label for="Open Source Community"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply" checked> Open Source Community</label><br>
+        <label for="Gitter help rooms"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Gitter help room</label><br>
+        <label for="Videos"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Videos</label><br>
+        <label for="City Meetups"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> City Meetups</label><br>
+        <label for="Wiki"><input id="Front-end-Projects" type="checkbox" name="Recommendations" value="Check all that apply">
+            Wiki</label><br>
+        <label for="Forum"><input id="Front-end-Projects" type="checkbox" name="Recommendations" value="Check all that apply">
+            Forum</label><br>
+        <label for="Additional Courses"><input id="Front-end-Projects" type="checkbox" name="Recommendations"
+                value="Check all that apply"> Additional Courses</label><br><br>
+
+        <label>Any comments or suggestions? </label><br>
+        <textarea size="1000" name="message">Enter your comment here....</textarea><br><br>
+        <button id="submit" type="submit" name="Submit" value="type=" submit">Submit</button>
+
+    </form>
+
+
+</body>
+
+</html>
