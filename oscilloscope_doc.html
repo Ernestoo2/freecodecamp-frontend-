@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title><img src="https://oscilloscopetools.com/wp-content/uploads/2022/03/logo.png" alt="header image for oscilloscopeTools"></title>
+    <meta name="description" content="Description of the page less than 150 characters">
+    <link rel="icon" type="image/png" href="images/favicon.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='#'>
+    <style>
+      .container{
+        background-color: #ddd;
+        margin:10px;
+        padding: 20px;
+        height: 1000px;
+      }
+      .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            margin:10px;
+      }
+          
+      img {
+            width: 200px;
+            height: 100px;
+            margin-right: 10px;
+            
+      }
+          
+     .textarea {
+            flex: 1;
+            resize: none;
+            margin-left: 500px;
+            margin-right:10px;
+            border-radius: 10px;
+            background-color: rgb(213, 213, 250);
+          }
+          
+          #search {
+            color: white;
+            padding: 10px;
+          }
+          .text-doc{
+            background-color:white;
+            width: 1125px;
+            margin: 10px;
+            height:auto;
+           
+          }
+          .dropbtn{
+            display: block;
+            margin-left: 10px;
+            
+          }
+
+          .dropdown{
+            position:absolute;
+            justify-content:left ;
+            width: 1125px;
+            
+            height:auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+          }
+          .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          .dropdown-content .nav-item a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+          }
+          .dropdown-content .nav-item a:hover {
+            background-color: #ddd;
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          .dropdown:hover .dropbtn {
+            color: white;
+            background-color: #000;
+          }
+          
+          .nav-item{
+            margin-right: 10px;
+
+          }
+
+          .icon{
+            display: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          
+          }
+          
+          @media screen and (max-width: 600px) {
+            .dropdown-content{
+              display: none;
+              flex-direction: column;
+              position: fixed;
+              top: 40px;
+              right: 0;
+
+            }
+          }
+
+  
+    </style>
+    <script>
+      <!-- function addMenu() {
+        var menu = document.createElement("ul");
+        document.body.appendChild(menu);
+      
+        var home = document.createElement("li");
+        home.innerHTML = "Home";
+        menu.appendChild(home);
+      
+        var about = document.createElement("li");
+        about.innerHTML = "About Us";
+        menu.appendChild(about);
+      
+        var contact = document.createElement("li");
+        contact.innerHTML = "Contact Us";
+        menu.appendChild(contact);
+      
+        var support = document.createElement("li");
+        support.innerHTML = "Support";
+        support.href = "support.html";
+        contact.appendChild(support);
+      
+        var feedback = document.createElement("li");
+        feedback.innerHTML = "Feedback";
+        feedback.href = "feedback.html";
+        contact.appendChild(feedback);
+      
+        var blog = document.createElement("li");
+        blog.innerHTML = "Blog";
+        menu.appendChild(blog);
+      
+        menu.addEventListener("click", function() {
+          var contextMenu = document.createElement("div");
+          contextMenu.className = "contextMenu";
+      
+          var homeMenuItem = document.createElement("a");
+          homeMenuItem.innerHTML = "Home";
+          homeMenuItem.href = "home.html";
+          contextMenu.appendChild(homeMenuItem);
+      
+          var aboutMenuItem = document.createElement("a");
+          aboutMenuItem.innerHTML = "About Us";
+          aboutMenuItem.href = "about.html";
+          contextMenu.appendChild(aboutMenuItem);
+      
+          var contactMenuItem = document.createElement("a");
+          contactMenuItem.innerHTML = "Contact Us";
+          contactMenuItem.href = "contact.html";
+          contextMenu.appendChild(contactMenuItem);
+      
+          var supportMenuItem = document.createElement("a");
+          supportMenuItem.innerHTML = "Support";
+          supportMenuItem.href = "support.html";
+          contextMenu.appendChild(supportMenuItem);
+      
+          var feedbackMenuItem = document.createElement("a");
+          feedbackMenuItem.innerHTML = "Feedback";
+          feedbackMenuItem.href = "feedback.html";
+          contextMenu.appendChild(feedbackMenuItem);
+      
+          var blogMenuItem = document.createElement("a");
+          blogMenuItem.innerHTML = "Blog";
+          blogMenuItem.href = "blog.html";
+          contextMenu.appendChild(blogMenuItem);
+      
+          document.body.appendChild(contextMenu);
+        });
+      } -->
+    </script>
+  </head>
+  
+  <body>
+    <div class="container">
+    <div class="container-fluid ">
+          <img class="img" src="https://oscilloscopetools.com/wp-content/uploads/2022/03/logo.png" alt="header image for oscilloscopeTools">
+          <form role="search" method="get" action="https://oscilloscopetools.com/" 
+          ><label for="form-textarea" class="button btn btn-primary">Search</label>
+          <div class="textarea" id="search"><input type="search" id="wp-block-search__input-2" 
+            class="wp-block-search__input" name="s" value="" placeholder="" required="" 
+            spellcheck="false" data-ms-editor="true"><button class="button btn btn-primary" type="submit" >Search</button>
+          </div></form>
+           
+    </div>
+    <br>
+    <div class="dropdown btn ">
+      
+      <button class="dropbtn">home</button>
+      <ul class="dropdown-content">
+    
+        <li class="nav-item"> <a href="#">Home</a></li>
+        <li class="nav-item"> <a href="#">About Us</a></li>
+        <li class="nav-item"> <a href="#">Contact Us</a></li>
+        <li class="nav-item"> <a href="#">Blog</a></li>
+      </ul>
+      <div style="display: flex; flex-direction:row; 
+      position: absolute;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;">
+        <a style="margin-right:10px;" href="#">Home</a> 
+        <a style="margin-right:10px;" href="#">About Us</a>
+        <a style="margin-right:10px;" href="#">Contact Us</a> 
+        <a style="margin-right:10px;" href="#">Blog</a> 
+      </div>
+      
+        
+       
+      
+      
+    </div><br><br><br><br>
+    <div class="text-doc">
+          <h3 class="text-doc-h3" style="margin: 10px; font-size:60px;">Oscilloscope Measure? (Explained)</h3>
+          <p class="h3-p"style="margin:10px;">Writing by <a class="Eze" href="#">Eze Ernest Chibueze</a> | Last Updated On: Jun 1, 2023</p>
+          
+          <article class="article-style"style="margin-left: 30px; margin-right:30px; margin-bottom: 10px;">
+            An oscilloscope is an essential equipment for building and 
+            testing anything dealing with electrical systems and electronics. 
+            It is used by most people across different industries, from automotive,
+            aerospace, communication, computer, etc. 
+            An oscilloscope has a screen that displays the waveform 
+            of an electrical signal, allowing you to analyze further.
+            <br><br>
+            <p class="aritcle-p-styele"style="font-weight:bold;">
+              So, what does an oscilloscope measure? Primarily, 
+              an oscilloscope measures  measures voltage. However, 
+              some oscilloscopes have advanced measurement tools that can quickly 
+              detect a signal’s characteristics such as amplitude, frequency, 
+              current, etc.
+            
+            </p>
+            
+            
+              <p>
+              Generally, an oscilloscope can measure both voltage-based and
+               time-based characteristics. Most modern oscilloscopes do the 
+               calculation for you. 
+              This means you will find a frequency reading when taking voltage
+               measurements.
+            </p>
+            <p>
+              If you’re still confused about what an oscilloscope measures, 
+              you’ve come to the right place. This article explains all about oscilloscopes,
+              types, what they measure, and why it is important. Stay with us.
+            </p>
+
+
+
+            </article>
+
+
+
+
+
+
+      </div>
+    </div>
+  </body>
+<html>
